@@ -96,9 +96,9 @@ header a:hover {
 }
 
 form {
-  width: 400px;
+  width: 350px;
   padding: 30px;
-  margin: 30px;
+  margin: 0 30px;
   background-color: #0077b6;
   color: white;
   border-radius: 5px;
@@ -124,7 +124,54 @@ form h2 {
   cursor: pointer;
 }
 
+/* cambios contacto */
+
 .contenedor-contacto {
+  display: flex;
+}
+
+.imagen-contacto {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.imagen-contacto img {
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .contenedor-contacto {
+    flex-direction: column; 
+    justify-content: center;  
+    align-items: center;
+  } 
+
+  .imagen-contacto{
+    width: 70%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .contenedor-contactoindividual {
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+  }
+
+  form {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    max-width: 300px;
+  } 
+}  
+
+.contenedor-contactoindividual {
   display: flex;
   justify-content: space-around;
   margin: 100px 50px;
