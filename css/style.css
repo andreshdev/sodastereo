@@ -48,8 +48,6 @@ header a:hover {
   color: blanchedalmond;
 }
 
-/* cambios  */
-
 .imagen-index {
   width: 100%;
   background-color: black;
@@ -57,11 +55,16 @@ header a:hover {
 }
 
 .imagen-index img {
-  /* display: block;
-  margin: auto; */
   max-width: 100%;
   margin: auto;
 }
+
+.imagen-index img {
+  -webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
+  animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
+}
+
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
 .parrafos-index {
   background-color: beige;
@@ -78,18 +81,133 @@ header a:hover {
   }
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0077b6;
+  color: white;
+  padding: 30px 15px;
+}
 
-/* .contenedor-integrantes {
+ion-icon {
+  font-size: 32px;
+  padding-left: 5px;
+}
+
+.contenedor-integrantes {
+  display: flex;
+  margin: 30px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.imagen-integrantes{
+  width: 500px;
+  height: 700px;
+}
+
+.imagen-integrantes img {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imagen-integrantes img {
+  -webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
+  animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
+}
+
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+.texto-integrantes {
   font-weight: bold;
-} */
+  padding: 10px;
+  width: 50%;
+}
 
-/* .contenedor-galeria img {
-  display: block;
-} */
+.texto-integrantes h2 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
 
-/* .contenedor-discos {
-  width: 35%;
-} */
+@media screen and (max-width: 768px) {
+  .contenedor-integrantes {
+    flex-direction: column; 
+    justify-content: center;  
+    align-items: center;
+  }
+
+  .imagen-integrantes{
+    max-width: 300px;
+  }
+
+  .texto-integrantes{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.contenedor-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 500px;
+  padding: 20px;
+  margin: 30px;
+  gap: 15px;
+}
+
+.contenedor-galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.items-galeria {
+  -webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
+  animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
+}
+
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+@media screen and (min-width: 768px) {
+  .contenedor-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contenedor-galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contenedor-discos {
+  padding: 20px;
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-discos iframe {
+  width: 30%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-discos iframe {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contenedor-discos iframe {
+    width: 100%;
+  }
+}
 
 .gracias-totales h1 {
   margin: 30px;
@@ -124,8 +242,6 @@ form h2 {
   cursor: pointer;
 }
 
-/* cambios contacto */
-
 .contenedor-contacto {
   display: flex;
 }
@@ -139,7 +255,12 @@ form h2 {
   width: 100%;
 }
 
+.imagen-contacto img {
+  -webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
+  animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
+}
 
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
 @media screen and (max-width: 768px) {
   .contenedor-contacto {
@@ -175,126 +296,5 @@ form h2 {
   display: flex;
   justify-content: space-around;
   margin: 100px 50px;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #0077b6;
-  color: white;
-  padding: 30px 15px;
-}
-
-ion-icon {
-  font-size: 32px;
-  padding-left: 5px;
-}
-
-/* cambios integrantes */
-
-.contenedor-integrantes {
-  display: flex;
-  margin: 30px;
-  padding: 10px;
-  justify-content: center;
-}
-
-.imagen-integrantes{
-  width: 500px;
-  height: 700px;
-}
-
-.imagen-integrantes img {
-  padding: 10px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.texto-integrantes {
-  font-weight: bold;
-  padding: 10px;
-  width: 50%;
-}
-
-.texto-integrantes h2 {
-  font-size: 2rem;
-  padding-bottom: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  .contenedor-integrantes {
-    flex-direction: column; 
-    justify-content: center;  
-    align-items: center;
-  }
-
-  .imagen-integrantes{
-    max-width: 300px;
-  }
-
-  .texto-integrantes{
-    /* width: 500px; */
-    width: 100%;
-    text-align: center;
-  }
-}
-
-/* cambios galeria */
-
-.contenedor-galeria {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 500px;
-  padding: 20px;
-  margin: 30px;
-  gap: 15px;
-}
-
-.contenedor-galeria img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@media screen and (min-width: 768px) {
-  .contenedor-galeria {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .contenedor-galeria {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* cambios discos */
-
-.contenedor-discos {
-  padding: 20px;
-  margin: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.contenedor-discos iframe {
-  width: 30%;
-  padding: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  .contenedor-discos iframe {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .contenedor-discos iframe {
-    width: 100%;
-  }
 }
 
