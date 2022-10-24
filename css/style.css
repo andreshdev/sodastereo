@@ -82,9 +82,13 @@ header a:hover {
 }
 
 @media screen and (max-width: 500px) {
-  li,a {
+  li, a {
     display: flex;
   }  
+
+  .redes-sociales {
+    display: flex;
+  }
 }
 
 footer {
