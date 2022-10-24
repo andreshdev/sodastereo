@@ -272,6 +272,12 @@ form h2 {
 
 @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
+.contenedor-contactoindividual {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 50px;
+}
+
 @media screen and (max-width: 768px) {
   .contenedor-contacto {
     flex-direction: column; 
@@ -289,6 +295,7 @@ form h2 {
     flex-direction: column;
     justify-content: center;  
     align-items: center;
+    margin: 30px;
   }
 
   form {
@@ -302,9 +309,5 @@ form h2 {
   } 
 }  
 
-.contenedor-contactoindividual {
-  display: flex;
-  justify-content: space-around;
-  margin: 100px 50px;
-}
+
 
