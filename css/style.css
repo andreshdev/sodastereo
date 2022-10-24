@@ -81,6 +81,12 @@ header a:hover {
   }
 }
 
+@media screen and (max-width: 500px) {
+  li,a {
+    display: flex;
+  }  
+}
+
 footer {
   display: flex;
   align-items: center;
