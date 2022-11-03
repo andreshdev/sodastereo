@@ -286,7 +286,7 @@ form h2 {
   } 
 
   .imagen-contacto{
-    width: 70%;
+    width: 80%;
     margin-left: 0;
     margin-bottom: 30px;
   }
@@ -304,6 +304,12 @@ form h2 {
 }
 
 @media screen and (max-width: 500px) {
+  .imagen-contacto{
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
   form {
     max-width: 300px;
   } 
