@@ -1,0 +1,22 @@
+$mainFont: "Montserrat", sans-serif;
+
+$mainColor: beige;
+$secondaryColor: #0077b6;
+$hoverColor: blanchedalmond;
+$textColor1: black;
+$textColor2: white;
+
+$ancho: 250px;
+$alto: 350px;
+
+@mixin flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin column-center-center {
+    flex-direction: column; 
+    justify-content: center;  
+    align-items: center;
+}

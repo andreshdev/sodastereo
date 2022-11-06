@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    align-items: center;
+    color: $textColor2;
+    background-color: $secondaryColor;
+    padding: 10px 15px;
+    justify-content: space-between;
+    a {
+		&:hover {
+			color: $hoverColor;
+		}   
+    }
+
+    .logo {
+        img {
+            height: 50px;
+            padding-right: 10px;
+        }
+
+        @include flex-center-center();
+
+        h1 {
+            @include flex-center-center();
+        }
+    }
+
+    li, a {
+        list-style-type: none;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline;
+        color: $textColor2;
+        padding-left: 5px;
+    }
+}
+

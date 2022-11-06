@@ -1,0 +1,101 @@
+/* index */
+
+@media screen and (max-width: 1024px) {
+    .parrafos-index {
+      padding: 20px 20px;  
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header li, a {
+      display: flex;
+    }  
+
+    .parrafos-index p:nth-child(n+2) {
+        display: none;
+    }
+  
+    .redes-sociales, a {
+      display: flex;
+    }
+}
+
+/* integrantes */
+
+@media screen and (max-width: 768px) {
+  .contenedor-integrantes {
+    @include column-center-center();
+  }
+
+  .imagen-integrantes{
+    max-width: 300px;
+  }
+
+  .texto-integrantes{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* galeria */
+
+@media screen and (min-width: 768px) {
+  .contenedor-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contenedor-galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* discografia */
+
+@media screen and (max-width: 768px) {
+  .contenedor-discos iframe {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contenedor-discos iframe {
+    width: 100%;
+  }
+}
+
+/* contacto */
+
+@media screen and (max-width: 768px) {
+  .contenedor-contacto {
+    @include column-center-center();
+  } 
+
+  .imagen-contacto{
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .contenedor-contactoindividual {
+    @include column-center-center();
+    margin: 30px;
+  }
+
+  form {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .imagen-contacto{
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    max-width: 300px;
+  } 
+}  
