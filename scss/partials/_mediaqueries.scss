@@ -1,23 +1,37 @@
 /* index */
 
 @media screen and (max-width: 1024px) {
-    .parrafos-index {
-      padding: 20px 20px;  
-    }
+  .parrafos-index {
+    padding: 20px 20px;  
+  }
 }
 
 @media screen and (max-width: 500px) {
-    header li, a {
-      display: flex;
-    }  
-
-    .parrafos-index p:nth-child(n+2) {
-        display: none;
+  header {
+    flex-direction: column;
+    nav {
+      padding-bottom: 10px;
+      a {
+        display: block;
+        text-align: center;
+        padding-left: 0px;
+      }
     }
+  }
+ 
+  .parrafos-index p:nth-child(3) {
+    display: none;
+  }
   
-    .redes-sociales, a {
-      display: flex;
-    }
+  .redes-sociales, a {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .parrafos-index p:nth-child(n+2) {
+    padding-top: 10px;
+  }
 }
 
 /* integrantes */

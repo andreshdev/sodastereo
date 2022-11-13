@@ -75,19 +75,51 @@ header a:hover {
   width: 100%;
 }
 
+.lectura {
+  color: brown;
+  font-style: italic;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
 @media screen and (max-width: 1024px) {
   .parrafos-index {
     padding: 20px 20px;  
-  }
+  } 
 }
 
 @media screen and (max-width: 500px) {
-  li, a {
-    display: flex;
-  }  
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    padding-bottom: 10px;
+  }
+
+  nav a {
+    padding-left: 0px;
+    justify-content: center;
+  }
+
+  .parrafos-index p:nth-child(3) {
+    display: none;
+  }
 
   .redes-sociales, a {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .parrafos-index p:nth-child(n+2) {
+    padding-top: 10px;
   }
 }
 
@@ -240,6 +272,10 @@ form h2 {
   display: block;
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+.controls {
+  width: 80%;
 }
 
 .btn {
